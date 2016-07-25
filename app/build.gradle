@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation', 'ExtraTranslation'
+    }
+
+    task luaPlaylistCopy(type: Copy) {
+        from '../share/lua/playlist'
+        into 'src/main/assets/lua/playlist'
+        exclude '**/*.txt'
+    }
+
+    task luaMetaCopy(type: Copy) {
+        from '../share/lua/meta'
+        into 'src/main/assets/lua/meta'
+        exclude '**/*.txt'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "io.github.mkjung.iviplayer"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "0.0.1"
+
+        resValue "string", "build_time", buildTime()
+        resValue "string", "build_host", hostName()
+//        resValue "string", "build_revision", revision()
+
+        tasks.whenTaskAdded { task ->
+            if (task.name.startsWith('merge')) {
+                task.dependsOn luaPlaylistCopy
+                task.dependsOn luaMetaCopy
+            }
+        }
+    }
+
+//    signingConfigs {
+//
+//        release {
+//            /*
+//            To set this properties, create file gradle.properties with these 3 props.
+//            e.g.
+//            keyStoreFile=/home/<username>/.android/debug.keystore
+//            storealias=androiddebugkey
+//            storepwd=android
+//             */
+//            storeFile file(keyStoreFile)
+//            keyAlias storealias
+//            if (System.getenv('PASSWORD_KEYSTORE') != null && !System.getenv('PASSWORD_KEYSTORE').isEmpty()){
+//                storePassword = System.getenv('PASSWORD_KEYSTORE')
+//                keyPassword = System.getenv('PASSWORD_KEYSTORE')
+//            } else {
+//                storePassword storepwd
+//                keyPassword storepwd
+//            }
+//        }
+//    }
+
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources false
+            proguardFile 'proguard.cfg'
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            jniDebuggable true
+        }
+    }
+
+    sourceSets.main {
+        assets.srcDirs = ['assets']
+    }
+}
+
+dependencies {
+    compile project(':api')
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:support-annotations:24.1.1'
+    compile 'com.android.support:preference-v7:24.1.1'
+    compile 'com.android.support:percent:24.1.1'
+    compile 'com.android.support:leanback-v17:24.1.1'
+    compile 'com.android.support:preference-leanback-v17:24.1.1'
+    compile 'io.github.mkjung:ivi-media-framework:0.0.2'
+    testCompile 'junit:junit:4.12'
+}
+
+def buildTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+def hostName() {
+    return System.getProperty("user.name") + "@" + InetAddress.localHost.hostName
+}
+
+//def revision() {
+//    def code = new ByteArrayOutputStream()
+//    exec {
+//        commandLine 'git', 'rev-parse', '--short', 'HEAD'
+//        standardOutput = code
+//    }
+//    return code.toString()
+//}
+
