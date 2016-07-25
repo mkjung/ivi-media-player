@@ -46,7 +46,7 @@ import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.PlaybackServiceFragment;
 import io.github.mkjung.ivi.gui.helpers.AudioUtil;
-import io.github.mkjung.iviplayer.gui.helpers.BitmapUtil;
+import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
 import io.github.mkjung.iviplayer.gui.tv.audioplayer.AudioPlayerActivity;
 import io.github.mkjung.iviplayer.gui.tv.browser.SortedBrowserFragment;
 import io.github.mkjung.ivi.media.MediaDatabase;

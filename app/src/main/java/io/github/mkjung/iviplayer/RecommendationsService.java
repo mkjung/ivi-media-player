@@ -38,7 +38,7 @@ import io.github.mkjung.ivi.media.MediaLibrary;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.gui.preferences.PreferencesActivity;
 import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
-import io.github.mkjung.iviplayer.gui.helpers.BitmapUtil;
+import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
 import io.github.mkjung.ivi.util.Util;
 import io.github.mkjung.ivi.util.WeakHandler;
 

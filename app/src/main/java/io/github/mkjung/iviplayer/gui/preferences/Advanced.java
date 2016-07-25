@@ -39,7 +39,7 @@ import io.github.mkjung.iviplayer.BuildConfig;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.ivi.gui.helpers.AudioUtil;
-import io.github.mkjung.iviplayer.gui.helpers.BitmapCache;
+import io.github.mkjung.ivi.gui.helpers.BitmapCache;
 import io.github.mkjung.ivi.gui.helpers.UiTools;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.util.Util;

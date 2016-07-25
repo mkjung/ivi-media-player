@@ -42,10 +42,10 @@ import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.helpers.AsyncImageLoader;
 import io.github.mkjung.ivi.gui.helpers.AudioUtil;
-import io.github.mkjung.iviplayer.gui.helpers.BitmapUtil;
+import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
 import io.github.mkjung.iviplayer.gui.tv.browser.MusicFragment;
 import io.github.mkjung.ivi.media.MediaWrapper;
-import io.github.mkjung.ivi.util.HttpImageLoader;
+import io.github.mkjung.iviplayer.util.HttpImageLoader;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
 public class CardPresenter extends Presenter {

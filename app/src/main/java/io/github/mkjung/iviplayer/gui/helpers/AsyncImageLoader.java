@@ -42,7 +42,7 @@ import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.audio.AudioBrowserListAdapter;
 //import io.github.mkjung.ivi.media.MediaGroup;
 import io.github.mkjung.ivi.media.MediaWrapper;
-import io.github.mkjung.ivi.util.HttpImageLoader;
+import io.github.mkjung.iviplayer.util.HttpImageLoader;
 
 public class AsyncImageLoader {
 

@@ -42,7 +42,7 @@ import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.MainActivity;
 import io.github.mkjung.iviplayer.gui.SecondaryActivity;
 import io.github.mkjung.ivi.gui.helpers.UiTools;
-import io.github.mkjung.ivi.media.MediaGroup;
+import io.github.mkjung.iviplayer.media.MediaGroup;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.Strings;
 import io.github.mkjung.ivi.util.Util;

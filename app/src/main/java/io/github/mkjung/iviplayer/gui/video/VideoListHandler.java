@@ -4,7 +4,7 @@ import android.os.Message;
 
 import io.github.mkjung.ivi.media.MediaLibrary;
 import io.github.mkjung.ivi.media.MediaWrapper;
-import io.github.mkjung.iviplayer.interfaces.IVideoBrowser;
+import io.github.mkjung.ivi.interfaces.IVideoBrowser;
 import io.github.mkjung.ivi.util.WeakHandler;
 
 public class VideoListHandler extends WeakHandler<IVideoBrowser> {

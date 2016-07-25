@@ -17,7 +17,7 @@ import org.videolan.vlc.extensions.api.VLCExtensionItem;
 import io.github.mkjung.iviplayer.gui.helpers.AsyncImageLoader;
 import io.github.mkjung.ivi.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
-import io.github.mkjung.ivi.util.HttpImageLoader;
+import io.github.mkjung.iviplayer.util.HttpImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;

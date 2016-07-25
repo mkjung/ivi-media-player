@@ -53,7 +53,7 @@ import io.github.mkjung.iviplayer.gui.tv.TvUtil;
 import io.github.mkjung.iviplayer.gui.tv.browser.interfaces.BrowserActivityInterface;
 import io.github.mkjung.iviplayer.gui.tv.browser.interfaces.BrowserFragmentInterface;
 import io.github.mkjung.iviplayer.gui.tv.browser.interfaces.DetailsFragment;
-import io.github.mkjung.iviplayer.interfaces.IVideoBrowser;
+import io.github.mkjung.ivi.interfaces.IVideoBrowser;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.WeakHandler;
 

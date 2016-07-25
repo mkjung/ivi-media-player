@@ -63,7 +63,7 @@ import io.github.mkjung.iviplayer.gui.tv.browser.BaseTvActivity;
 import io.github.mkjung.iviplayer.gui.tv.browser.MusicFragment;
 import io.github.mkjung.iviplayer.gui.tv.browser.VerticalGridActivity;
 import io.github.mkjung.iviplayer.gui.video.VideoListHandler;
-import io.github.mkjung.iviplayer.interfaces.IVideoBrowser;
+import io.github.mkjung.ivi.interfaces.IVideoBrowser;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.media.MediaLibrary;
 import io.github.mkjung.ivi.media.MediaUtils;
