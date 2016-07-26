@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="Theme.Transparent" parent="android:Theme">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
+
     <style name="Theme.VLC" parent="Theme.VLC.7"/>
     <style name="Theme.VLC.7" parent="Theme.VLC.Apearance">
         <item name="actionBarStyle">@style/ActionBar</item>
