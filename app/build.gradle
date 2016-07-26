@@ -187,7 +187,7 @@ android {
 
         //Custom APK name
         variant.outputs.each { output ->
-            def outputName = "vlc-android-player-"
+            def outputName = "ivi-media-player-"
             if (!variant.productFlavors.get(0).name.equals("vanilla"))
                 outputName += variant.productFlavors.get(0).name.toUpperCase() + "-"
             outputName += vlcVersion + "-" + variant.productFlavors.get(1).name + ".apk"
