@@ -1,1 +1,2 @@
-include ':api', ':app'
+include ':api', ':axmlrpc', ':app'
+project(':axmlrpc').projectDir = new File('java-libs/axmlrpc')

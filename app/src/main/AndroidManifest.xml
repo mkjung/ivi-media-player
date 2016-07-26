@@ -5,7 +5,7 @@
     android:installLocation="auto">
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="17"
         android:targetSdkVersion="23"
         tools:overrideLibrary="android.support.v17.leanback, android.support.v14.preference, android.support.v17.preference" />
 
@@ -435,7 +435,7 @@
         <activity
             android:name=".gui.DialogActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.Transparent" />
+            android:theme="@style/TransparentTheme" />
 
         <service android:name=".extensions.ExtensionManagerService" />
         <service android:name="io.github.mkjung.ivi.PlaybackService" />
@@ -478,6 +478,37 @@
             </intent-filter>
         </receiver>
         
+        <!-- TV components -->
+        <activity
+            android:name=".gui.tv.MainTvActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Leanback" />
+        <activity
+            android:name=".gui.tv.DetailsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Leanback.Details" />
+        <activity
+            android:name=".gui.tv.browser.VerticalGridActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Leanback" />
+        <activity
+            android:name="org.videolan.vlc.gui.tv.SearchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Leanback" />
+        <activity
+            android:name=".gui.tv.audioplayer.AudioPlayerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:allowTaskReparenting="true"
+            android:theme="@style/Theme.Leanback" />
+        <activity android:name=".gui.tv.preferences.PreferencesActivity"
+            android:theme="@style/Theme.VLC.Leanback.Preferences" />
+        <activity android:name=".gui.tv.AboutActivity"
+            android:theme="@style/Theme.Leanback" />
+        <activity android:name=".gui.tv.LicenceActivity"
+            android:theme="@style/Theme.Leanback" />
+
         <service
             android:name=".RecommendationsService"
             android:exported="false" >
