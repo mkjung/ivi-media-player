@@ -36,7 +36,7 @@ import android.widget.BaseAdapter;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
 import io.github.mkjung.iviplayer.R;
-//import io.github.mkjung.iviplayer.databinding.AudioBrowserItemBinding;
+import io.github.mkjung.iviplayer.databinding.AudioBrowserItemBinding;
 import io.github.mkjung.iviplayer.gui.helpers.MediaComparators;
 import io.github.mkjung.iviplayer.interfaces.IAudioClickHandler;
 
@@ -136,9 +136,9 @@ public class AlbumAdapter extends BaseAdapter implements IAudioClickHandler{
         mMediaList.clear();
     }
 
-//    static class ViewHolder {
-//        AudioBrowserItemBinding binding;
-//    }
+    static class ViewHolder {
+        AudioBrowserItemBinding binding;
+    }
 
     public interface ContextPopupMenuListener {
         void onPopupMenu(View anchor, final int position);

@@ -40,7 +40,7 @@ import io.github.mkjung.iviplayer.BR;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.audio.AudioBrowserListAdapter;
-//import io.github.mkjung.ivi.media.MediaGroup;
+import io.github.mkjung.iviplayer.media.MediaGroup;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.util.HttpImageLoader;
 
@@ -192,8 +192,8 @@ public class AsyncImageLoader {
 
     @BindingAdapter({"media", "binding"})
     public static void loadPicture(ImageView v, MediaWrapper mw, ViewDataBinding vdb) {
-//        if (mw instanceof MediaGroup)
-//            mw = ((MediaGroup) mw).getFirstMedia();
+        if (mw instanceof MediaGroup)
+            mw = ((MediaGroup) mw).getFirstMedia();
         final Bitmap bitmap = mw.getType() == MediaWrapper.TYPE_VIDEO ?
                 BitmapUtil.getPictureFromCache(mw) :
                 AudioUtil.getCoverFromMemCache(v.getContext(), mw, 64);
