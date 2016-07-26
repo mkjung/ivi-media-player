@@ -35,12 +35,9 @@ java-libs/appcompat/.project
 *.iml
 
 #gradle
-gradle.properties
-gradlew.bat
-gradlew
-gradle/
 .gradle/
 build/
 vlc-android/build/
 java-libs/WheelView/build/
 libVLC/build/
+app/src/main/assets/lua/

@@ -101,7 +101,7 @@ dependencies {
     compile 'com.android.support:percent:24.1.1'
     compile 'com.android.support:leanback-v17:24.1.1'
     compile 'com.android.support:preference-leanback-v17:24.1.1'
-    compile 'io.github.mkjung:ivi-media-framework:0.0.2'
+    compile 'io.github.mkjung:ivi-media-framework:0.0.3'
     testCompile 'junit:junit:4.12'
 }
 
