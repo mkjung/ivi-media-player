@@ -57,11 +57,12 @@ public class AboutFragment extends Fragment {
 
         View aboutMain = v.findViewById(R.id.about_main);
         WebView webView = (WebView)v.findViewById(R.id.webview);
-        String revision = getString(R.string.build_revision);
+        String revision = "";
+//        String revision = getString(R.string.build_revision);
         webView.loadData(Util.readAsset("licence.htm", "").replace("!COMMITID!",revision), "text/html", "UTF8");
 
 
-        UiTools.fillAboutView(v);
+//        UiTools.fillAboutView(v);
 
         List<View> lists = Arrays.asList(aboutMain, webView);
         String[] titles = new String[] {getString(R.string.about), getString(R.string.licence)};

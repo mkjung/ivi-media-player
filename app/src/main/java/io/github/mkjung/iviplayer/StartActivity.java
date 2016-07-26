@@ -42,6 +42,7 @@ import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
 import io.github.mkjung.ivi.media.MediaUtils;
 import io.github.mkjung.ivi.util.AndroidDevices;
 import io.github.mkjung.ivi.util.Util;
+import io.github.mkjung.ivi.VLCApplication;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

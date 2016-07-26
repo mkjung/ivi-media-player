@@ -187,10 +187,11 @@ public class AudioPlayer extends PlaybackServiceFragment implements PlaybackServ
         mResumeToVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mService != null && mService.hasMedia()) {
-                    mService.getCurrentMediaWrapper().removeFlags(MediaWrapper.MEDIA_FORCE_AUDIO);
-                    mService.switchToVideo();
-                }
+// TODO: switchToVideo
+//                if (mService != null && mService.hasMedia()) {
+//                    mService.getCurrentMediaWrapper().removeFlags(MediaWrapper.MEDIA_FORCE_AUDIO);
+//                    mService.switchToVideo();
+//                }
             }
         });
         mPlayPause.setOnClickListener(new View.OnClickListener() {
@@ -315,11 +316,12 @@ public class AudioPlayer extends PlaybackServiceFragment implements PlaybackServ
 
         if (mService.hasMedia() && !mService.isVideoPlaying()) {
             SharedPreferences mSettings= PreferenceManager.getDefaultSharedPreferences(getActivity());
-            if (isResumed() && mSettings.getBoolean(PreferencesActivity.VIDEO_RESTORE, false)){
-                Util.commitPreferences(mSettings.edit().putBoolean(PreferencesActivity.VIDEO_RESTORE, false));
-                mService.switchToVideo();
-                return;
-            } else
+// TODO: switchToVideo
+//            if (isResumed() && mSettings.getBoolean(PreferencesActivity.VIDEO_RESTORE, false)){
+//                Util.commitPreferences(mSettings.edit().putBoolean(PreferencesActivity.VIDEO_RESTORE, false));
+//                mService.switchToVideo();
+//                return;
+//            } else
                 show();
         } else {
             hide();

@@ -44,6 +44,10 @@ import io.github.mkjung.iviplayer.media.MediaGroup;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.util.HttpImageLoader;
 
+import io.github.mkjung.ivi.gui.helpers.AudioUtil;
+import io.github.mkjung.ivi.gui.helpers.BitmapCache;
+import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
+
 public class AsyncImageLoader {
 
     public interface Callbacks {

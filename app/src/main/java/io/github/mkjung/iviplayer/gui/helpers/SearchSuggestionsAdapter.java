@@ -39,6 +39,9 @@ import io.github.mkjung.ivi.media.MediaLibrary;
 import io.github.mkjung.ivi.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
+import io.github.mkjung.ivi.gui.helpers.AudioUtil;
+import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
+
 public class SearchSuggestionsAdapter extends CursorAdapter {
 
     public final static String TAG = "VLC/SearchSuggestionsAdapter";

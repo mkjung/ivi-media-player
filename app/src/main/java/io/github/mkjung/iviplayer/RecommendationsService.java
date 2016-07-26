@@ -41,6 +41,7 @@ import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
 import io.github.mkjung.ivi.gui.helpers.BitmapUtil;
 import io.github.mkjung.ivi.util.Util;
 import io.github.mkjung.ivi.util.WeakHandler;
+import io.github.mkjung.ivi.VLCApplication;
 
 import java.util.ArrayList;
 import java.util.Collections;

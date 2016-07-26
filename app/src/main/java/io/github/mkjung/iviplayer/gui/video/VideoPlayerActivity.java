@@ -744,7 +744,9 @@ public class VideoPlayerActivity extends AppCompatActivity implements IVLCVout.C
         mPlaybackStarted = true;
 
         final IVLCVout vlcVout = mService.getVLCVout();
-        if (vlcVout.areViewsAttached() && mService.isPlayingPopup())
+        if (vlcVout.areViewsAttached()
+//                && mService.isPlayingPopup()
+                )
             mService.stopPlayback();
         vlcVout.detachViews();
         if (mPresentation == null) {

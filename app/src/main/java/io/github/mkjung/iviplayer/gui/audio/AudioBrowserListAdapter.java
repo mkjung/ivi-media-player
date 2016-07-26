@@ -41,7 +41,7 @@ import android.widget.SectionIndexer;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.ivi.gui.helpers.AudioUtil;
 
-//import io.github.mkjung.iviplayer.BR;
+import io.github.mkjung.iviplayer.BR;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.gui.helpers.AsyncImageLoader;
 import io.github.mkjung.iviplayer.gui.helpers.MediaComparators;

@@ -875,9 +875,9 @@ public class AudioBrowserFragment extends MediaBrowserFragment implements SwipeR
             //File playlists
             ArrayList<MediaWrapper> playlists = mMediaLibrary.getPlaylistFilesItems();
             mPlaylistAdapter.addAll(playlists, AudioBrowserListAdapter.TYPE_PLAYLISTS);
-            //DB playlists
-            ArrayList<AudioBrowserListAdapter.ListItem> dbPlaylists = mMediaLibrary.getPlaylistDbItems();
-            mPlaylistAdapter.addAll(dbPlaylists);
+            // TODO: DB playlists
+//            ArrayList<AudioBrowserListAdapter.ListItem> dbPlaylists = mMediaLibrary.getPlaylistDbItems();
+//            mPlaylistAdapter.addAll(dbPlaylists);
 
             mAdaptersToNotify.add(mPlaylistAdapter);
             if (mReadyToDisplay && !mDisplaying)

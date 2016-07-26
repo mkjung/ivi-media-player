@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import io.github.mkjung.ivi.util.AndroidDevices;
+import io.github.mkjung.ivi.VLCApplication;
 
 public class BootupReceiver extends BroadcastReceiver {
     public BootupReceiver() {

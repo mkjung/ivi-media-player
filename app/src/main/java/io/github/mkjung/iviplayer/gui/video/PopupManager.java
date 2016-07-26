@@ -126,8 +126,8 @@ public class PopupManager implements PlaybackService.Callback, GestureDetector.O
 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
-        mService.removePopup();
-        mService.switchToVideo();
+//        mService.removePopup();
+//        mService.switchToVideo();
         return true;
     }
 
@@ -222,7 +222,7 @@ public class PopupManager implements PlaybackService.Callback, GestureDetector.O
     public void onMediaPlayerEvent(MediaPlayer.Event event) {
         switch (event.type) {
             case MediaPlayer.Event.Stopped:
-                mService.removePopup();
+//                mService.removePopup();
                 break;
             case MediaPlayer.Event.Playing:
                 mRootView.setKeepScreenOn(true);
@@ -271,8 +271,8 @@ public class PopupManager implements PlaybackService.Callback, GestureDetector.O
                 stopPlayback();
                 break;
             case R.id.popup_expand:
-                mService.removePopup();
-                mService.switchToVideo();
+//                mService.removePopup();
+//                mService.switchToVideo();
                 break;
         }
     }
