@@ -40,12 +40,14 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
+import io.github.mkjung.ivi.PlaybackService;
 import io.github.mkjung.ivi.VLCApplication;
 import org.videolan.vlc.extensions.api.IExtensionHost;
 import org.videolan.vlc.extensions.api.IExtensionService;
 import org.videolan.vlc.extensions.api.VLCExtensionItem;
 import io.github.mkjung.ivi.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
+import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -257,7 +259,22 @@ public class ExtensionManagerService extends Service {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        MediaUtils.openMediaNoUi(ExtensionManagerService.this, media);
+                        final Context context = ExtensionManagerService.this;
+
+                        if (media == null)
+                            return;
+
+                        if (media.getType() == MediaWrapper.TYPE_VIDEO) {
+                            VideoPlayerActivity.start(context, media.getUri(), media.getTitle());
+                        } else {
+                            new BaseCallBack(context) {
+                                @Override
+                                public void onConnected(PlaybackService service) {
+                                    service.load(media);
+                                    mClient.disconnect();
+                                }
+                            };
+                        }
                     }
                 });
             }
@@ -282,6 +299,20 @@ public class ExtensionManagerService extends Service {
          */
 //        final Queue<Pair<Object, Operation>> deferredOps
 //                = new LinkedList<Pair<Object, Operation>>();
+    }
+
+    private static abstract class BaseCallBack implements PlaybackService.Client.Callback {
+        protected PlaybackService.Client mClient;
+
+        private BaseCallBack(Context context) {
+            mClient = new PlaybackService.Client(context, this);
+            mClient.connect();
+        }
+
+        protected BaseCallBack() {}
+
+        @Override
+        public void onDisconnected() {}
     }
 
     private final Handler mHandler = new Handler();

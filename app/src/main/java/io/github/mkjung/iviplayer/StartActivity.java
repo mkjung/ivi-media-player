@@ -24,6 +24,7 @@
 package io.github.mkjung.iviplayer;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -34,6 +35,9 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import org.videolan.libvlc.util.AndroidUtil;
+
+import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.gui.AudioPlayerContainerActivity;
 import io.github.mkjung.iviplayer.gui.MainActivity;
 import io.github.mkjung.iviplayer.gui.tv.MainTvActivity;
@@ -59,14 +63,33 @@ public class StartActivity extends Activity {
         Intent intent = getIntent();
         if (intent != null && TextUtils.equals(intent.getAction(), Intent.ACTION_VIEW) && intent.getData() != null) {
             intent.setDataAndType(getUri(intent), intent.getType());
-            if (intent.getType() != null && intent.getType().startsWith("video"))
+            if (intent.getType() != null && intent.getType().startsWith("video")) {
                 startActivity(intent.setClass(this, VideoPlayerActivity.class));
-            else
-                MediaUtils.openMediaNoUi(intent.getData());
+            } else {
+                final Context context = VLCApplication.getAppContext();
+                final MediaWrapper media = new MediaWrapper(intent.getData());
+
+                if (media == null)
+                    return;
+
+                if (media.getType() == MediaWrapper.TYPE_VIDEO) {
+                    VideoPlayerActivity.start(context, media.getUri(), media.getTitle());
+                } else {
+                    new BaseCallBack(context) {
+                        @Override
+                        public void onConnected(PlaybackService service) {
+                            service.load(media);
+                            mClient.disconnect();
+                        }
+                    };
+                }
+            }
         } else if (intent != null && TextUtils.equals(intent.getAction(), AudioPlayerContainerActivity.ACTION_SHOW_PLAYER)) {
             startActivity(new Intent(this, VLCApplication.showTvUi() ? AudioPlayerActivity.class : MainActivity.class));
-        } else
+        } else {
             startActivity(new Intent(this, VLCApplication.showTvUi() ? MainTvActivity.class : MainActivity.class));
+        }
+
         finish();
     }
 
@@ -137,5 +160,19 @@ public class StartActivity extends Activity {
         } else
             mUri = data;
         return mUri;
+    }
+
+    private static abstract class BaseCallBack implements PlaybackService.Client.Callback {
+        protected PlaybackService.Client mClient;
+
+        private BaseCallBack(Context context) {
+            mClient = new PlaybackService.Client(context, this);
+            mClient.connect();
+        }
+
+        protected BaseCallBack() {}
+
+        @Override
+        public void onDisconnected() {}
     }
 }
