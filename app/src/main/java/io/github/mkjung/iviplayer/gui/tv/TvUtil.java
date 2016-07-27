@@ -30,7 +30,7 @@ import android.view.View;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.gui.tv.audioplayer.AudioPlayerActivity;
 import io.github.mkjung.iviplayer.gui.tv.browser.VerticalGridActivity;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
 import java.util.ArrayList;

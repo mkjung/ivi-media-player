@@ -36,7 +36,7 @@ import android.widget.TextView;
 
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.gui.helpers.AudioUtil;
 import io.github.mkjung.iviplayer.gui.helpers.MediaComparators;

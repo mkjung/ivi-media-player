@@ -38,7 +38,7 @@ import io.github.mkjung.iviplayer.databinding.BrowserItemSeparatorBinding;
 import io.github.mkjung.iviplayer.databinding.DirectoryViewItemBinding;
 import io.github.mkjung.iviplayer.gui.helpers.MediaComparators;
 import io.github.mkjung.ivi.media.MediaDatabase;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.CustomDirectories;
 

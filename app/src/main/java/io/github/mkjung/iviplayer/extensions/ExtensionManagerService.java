@@ -40,12 +40,13 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
-import io.github.mkjung.ivi.PlaybackService;
-import io.github.mkjung.ivi.VLCApplication;
 import org.videolan.vlc.extensions.api.IExtensionHost;
 import org.videolan.vlc.extensions.api.IExtensionService;
 import org.videolan.vlc.extensions.api.VLCExtensionItem;
-import io.github.mkjung.ivi.media.MediaUtils;
+
+import io.github.mkjung.iviplayer.PlaybackService;
+import io.github.mkjung.ivi.VLCApplication;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
 

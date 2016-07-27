@@ -64,14 +64,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.videolan.libvlc.util.AndroidUtil;
+
+import org.videolan.vlc.extensions.api.VLCExtensionItem;
+
 import io.github.mkjung.iviplayer.BuildConfig;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.StartActivity;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.extensions.ExtensionListing;
 import io.github.mkjung.iviplayer.extensions.ExtensionManagerService;
-import org.videolan.vlc.extensions.api.VLCExtensionItem;
 import io.github.mkjung.iviplayer.gui.audio.AudioBrowserFragment;
 import io.github.mkjung.iviplayer.gui.browser.BaseBrowserFragment;
 import io.github.mkjung.iviplayer.gui.browser.ExtensionBrowser;
@@ -91,7 +93,7 @@ import io.github.mkjung.iviplayer.interfaces.IRefreshable;
 import io.github.mkjung.iviplayer.interfaces.ISortable;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.util.Permissions;
 import io.github.mkjung.ivi.util.Util;
 import io.github.mkjung.ivi.util.VLCInstance;

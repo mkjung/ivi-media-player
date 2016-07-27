@@ -48,7 +48,7 @@ import android.widget.ImageView;
 import org.videolan.libvlc.IVLCVout;
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.preferences.PreferencesActivity;

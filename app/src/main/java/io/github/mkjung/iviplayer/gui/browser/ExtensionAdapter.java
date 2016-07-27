@@ -11,11 +11,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.videolan.vlc.extensions.api.VLCExtensionItem;
+
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.databinding.ExtensionItemViewBinding;
-import org.videolan.vlc.extensions.api.VLCExtensionItem;
 import io.github.mkjung.iviplayer.gui.helpers.AsyncImageLoader;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.util.HttpImageLoader;
 

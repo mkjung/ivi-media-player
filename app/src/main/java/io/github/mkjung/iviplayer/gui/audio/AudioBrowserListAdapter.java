@@ -46,7 +46,7 @@ import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.gui.helpers.AsyncImageLoader;
 import io.github.mkjung.iviplayer.gui.helpers.MediaComparators;
 import io.github.mkjung.iviplayer.interfaces.IAudioClickHandler;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
 import java.util.ArrayList;

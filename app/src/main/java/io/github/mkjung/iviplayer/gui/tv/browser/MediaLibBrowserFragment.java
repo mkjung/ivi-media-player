@@ -26,7 +26,7 @@ package io.github.mkjung.iviplayer.gui.tv.browser;
 import android.os.Bundle;
 
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
 import java.util.concurrent.CyclicBarrier;

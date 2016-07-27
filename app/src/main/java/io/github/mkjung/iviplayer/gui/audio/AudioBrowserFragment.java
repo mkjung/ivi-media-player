@@ -67,7 +67,7 @@ import io.github.mkjung.iviplayer.gui.view.SwipeRefreshLayout;
 import io.github.mkjung.ivi.interfaces.IBrowser;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.AndroidDevices;
 import io.github.mkjung.ivi.util.FileUtils;

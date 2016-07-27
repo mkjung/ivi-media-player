@@ -36,14 +36,14 @@ import android.util.Log;
 
 import org.videolan.libvlc.util.AndroidUtil;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.iviplayer.gui.AudioPlayerContainerActivity;
 import io.github.mkjung.iviplayer.gui.MainActivity;
 import io.github.mkjung.iviplayer.gui.tv.MainTvActivity;
 import io.github.mkjung.iviplayer.gui.tv.audioplayer.AudioPlayerActivity;
 import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.util.AndroidDevices;
 import io.github.mkjung.ivi.util.Util;
 import io.github.mkjung.ivi.VLCApplication;

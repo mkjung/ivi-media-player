@@ -36,13 +36,13 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.Toast;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.databinding.PlaylistItemBinding;
 import io.github.mkjung.ivi.gui.helpers.UiTools;
 import io.github.mkjung.iviplayer.interfaces.SwipeDragHelperAdapter;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.WeakHandler;
 

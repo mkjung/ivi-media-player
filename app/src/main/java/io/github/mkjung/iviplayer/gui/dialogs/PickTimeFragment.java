@@ -30,7 +30,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.gui.PlaybackServiceFragment;
 import io.github.mkjung.ivi.gui.helpers.UiTools;

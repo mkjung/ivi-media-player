@@ -45,7 +45,7 @@ import android.widget.TextView;
 import com.android.widget.SlidingPaneLayout;
 
 import io.github.mkjung.iviplayer.BuildConfig;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.audio.AudioPlayer;
@@ -53,7 +53,7 @@ import io.github.mkjung.iviplayer.gui.browser.MediaBrowserFragment;
 import io.github.mkjung.ivi.gui.helpers.UiTools;
 import io.github.mkjung.iviplayer.interfaces.IRefreshable;
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.util.Strings;
 import io.github.mkjung.ivi.util.Util;
 import io.github.mkjung.ivi.util.WeakHandler;

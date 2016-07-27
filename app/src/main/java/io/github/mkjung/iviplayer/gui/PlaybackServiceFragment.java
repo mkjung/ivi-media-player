@@ -25,7 +25,7 @@ package io.github.mkjung.iviplayer.gui;
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 
 import io.github.mkjung.iviplayer.gui.video.VideoPlayerActivity;
 

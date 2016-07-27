@@ -440,7 +440,7 @@
             android:theme="@style/TransparentTheme" />
 
         <service android:name=".extensions.ExtensionManagerService" />
-        <service android:name="io.github.mkjung.ivi.PlaybackService" />
+        <service android:name=".PlaybackService" />
         <receiver
             android:name=".widget.VLCAppWidgetProviderWhite"
             android:exported="false"

@@ -29,7 +29,7 @@ import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.databinding.ListItemBinding;
 import io.github.mkjung.ivi.media.MediaDatabase;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 
 import java.util.ArrayList;

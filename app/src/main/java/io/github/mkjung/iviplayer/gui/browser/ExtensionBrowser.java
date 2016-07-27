@@ -25,7 +25,7 @@ import org.videolan.vlc.extensions.api.VLCExtensionItem;
 import io.github.mkjung.iviplayer.gui.view.ContextMenuRecyclerView;
 import io.github.mkjung.iviplayer.gui.view.DividerItemDecoration;
 import io.github.mkjung.iviplayer.gui.view.SwipeRefreshLayout;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.WeakHandler;
 

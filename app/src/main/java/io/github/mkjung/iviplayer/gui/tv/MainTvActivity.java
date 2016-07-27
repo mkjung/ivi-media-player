@@ -50,7 +50,7 @@ import android.widget.ProgressBar;
 
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.RecommendationsService;
 import io.github.mkjung.iviplayer.StartActivity;
@@ -66,7 +66,7 @@ import io.github.mkjung.iviplayer.gui.video.VideoListHandler;
 import io.github.mkjung.ivi.interfaces.IVideoBrowser;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.media.Thumbnailer;
 import io.github.mkjung.ivi.util.AndroidDevices;

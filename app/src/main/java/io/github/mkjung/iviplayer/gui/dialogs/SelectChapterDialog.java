@@ -33,7 +33,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import org.videolan.libvlc.MediaPlayer;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.iviplayer.gui.PlaybackServiceFragment;
 import io.github.mkjung.ivi.gui.helpers.UiTools;

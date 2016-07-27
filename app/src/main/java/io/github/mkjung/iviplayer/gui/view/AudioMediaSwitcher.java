@@ -25,7 +25,7 @@ import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 
 
 public abstract class AudioMediaSwitcher extends FlingViewGroup {

@@ -41,7 +41,7 @@ import android.text.TextUtils;
 import android.widget.Toast;
 
 import org.videolan.libvlc.util.AndroidUtil;
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.VLCApplication;
 import io.github.mkjung.iviplayer.gui.PlaybackServiceFragment;
@@ -51,7 +51,7 @@ import io.github.mkjung.iviplayer.gui.tv.audioplayer.AudioPlayerActivity;
 import io.github.mkjung.iviplayer.gui.tv.browser.SortedBrowserFragment;
 import io.github.mkjung.ivi.media.MediaDatabase;
 import io.github.mkjung.ivi.media.MediaLibrary;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 import io.github.mkjung.ivi.media.MediaWrapper;
 import io.github.mkjung.ivi.util.FileUtils;
 

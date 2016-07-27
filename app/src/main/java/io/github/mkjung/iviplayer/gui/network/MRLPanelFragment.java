@@ -39,7 +39,7 @@ import io.github.mkjung.iviplayer.R;
 import io.github.mkjung.ivi.gui.helpers.UiTools;
 import io.github.mkjung.iviplayer.interfaces.IHistory;
 import io.github.mkjung.ivi.media.MediaDatabase;
-import io.github.mkjung.ivi.media.MediaUtils;
+import io.github.mkjung.iviplayer.media.MediaUtils;
 
 import java.util.ArrayList;
 

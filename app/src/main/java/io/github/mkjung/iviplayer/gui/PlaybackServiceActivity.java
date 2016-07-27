@@ -26,7 +26,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.MainThread;
 
-import io.github.mkjung.ivi.PlaybackService;
+import io.github.mkjung.iviplayer.PlaybackService;
 
 import java.util.ArrayList;
 
